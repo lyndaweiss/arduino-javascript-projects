@@ -1,6 +1,8 @@
 # Blink-Node.js
 Source code for an example in which a commands to blink an LED are sent to an Arduino UNO from a web browser.
 
+Go to [arduino-javascript.lyndaweiss.net](http://arduino-javascript.lyndaweiss.net/overview) for a full tutorial!
+
 ### How to run
 1. Download [arduino-projects](../master) repository, and extract blink-nodejs folder
 2. Change directory to blink-nodejs folder
