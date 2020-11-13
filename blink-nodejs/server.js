@@ -15,8 +15,6 @@ function handler(request, response) {
     fileName += 'index.html';
   }
 
-  console.log(`Request from ${response.socket.remoteAddress}`);
-
   // Content types for writing HTTP header
   const contentTypes = {
     '.html': 'text/html',
@@ -61,4 +59,3 @@ socketServer.on('connect', socket => {
 
 // Start server and have it listen on port 8000
 server.listen(8000, 'localhost');
-// server.listen(8000, '192.168.0.49');
