@@ -19,6 +19,8 @@ Source code for an example in which commands to control a LEGO&reg; Power Functi
 ### Circuit
 ![Image of Circuit](legomotor-circuit.png)
 
+Also, connect LEGO&reg; battery pack to the LEGO&reg; IR Reciever cable, and connect LEGO&reg; motor(s) to the LEGO&reg; Receiver. Set the Receiver to channel 2.
+
 ### How to Run
 1. Identify the name/number of the port the Arduino UNO is connected to (COM* on Windows, /dev/ttyUSB# or /dev/ttyACM* on Linux, replace * with a number)
    1. Set the port in the Ardunio IDE (Tools->Port)
