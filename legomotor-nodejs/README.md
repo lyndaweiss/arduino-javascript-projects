@@ -1,4 +1,4 @@
-# LEGO Motor
+# LEGO&reg; Motor
 Source code for an example in which commands to control a LEGO&reg; Power Functions motor are sent to an Arduino UNO from a web browser.
 
 ### Installation
@@ -12,7 +12,7 @@ Source code for an example in which commands to control a LEGO&reg; Power Functi
 ### How to run
 1. Identify the name/number of the port the Arduino UNO is connected to (COM* on Windows, /dev/ttyUSB# or /dev/ttyACM* on Linux, replace * with a number)
    1. Set the port in the Ardunio IDE (Tools->Port)
-   2. Set the port in legomotor-server.js (change the first argument in the line `const arduinoPort = new serialPort("COM3", { baudRate: 115200 });`
+   2. change the first argument in the line `const arduinoPort = new serialPort("COM3", { baudRate: 115200 });` in legomotor-server.js
 2. Verify/Upload motor-uno.ino
 3. Start a command prompt (Windows) or shell (Linux)
    1. Go to project directory (arduino-javascript-projects/legomotor-nodejs)
