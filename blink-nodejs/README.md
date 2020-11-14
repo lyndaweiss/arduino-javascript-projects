@@ -4,8 +4,8 @@ Source code for an example in which a commands to blink an LED are sent to an Ar
 Go to [arduino-javascript.lyndaweiss.net](http://arduino-javascript.lyndaweiss.net/overview) for a full tutorial!
 
 ### How to run
-1. Clone [arduino-projects](../master) repository
-2. Change directory to arduino-projects/blink-nodejs folder
+1. Clone [arduino-javascript-projects](../master) repository
+2. Change directory to arduino-javascript-projects/blink-nodejs folder
 3. Install [Node.js](https://nodejs.org/en/)
 4. Run `npm install` to install packages needed by Node.js for this example, specifically Serialport and Socket.io.
 
