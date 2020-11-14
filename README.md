@@ -1,4 +1,4 @@
-# arduino-projects
+# arduino-javascript-projects
 This is a collection of projects that involve communicating with an Arduino UNO from a web browser via a Node.js server.
 
 ### [Blink-Node.js](../master/blink-nodejs)
