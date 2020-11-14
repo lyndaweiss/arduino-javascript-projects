@@ -1,5 +1,5 @@
 # LEGO Motor
-Source code for an example in which commands to control a LEGO Power Functions motor are sent to an Arduino UNO from a web browser.
+Source code for an example in which commands to control a LEGO&reg; Power Functions motor are sent to an Arduino UNO from a web browser.
 
 ### Installation
 1. Clone [arduino-javascript-projects](../master) repository
