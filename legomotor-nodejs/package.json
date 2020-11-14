@@ -1,0 +1,16 @@
+{
+  "name": "node-arduino-legomotor",
+  "version": "0.0.1",
+  "description": "Command Lego Power Functions Motor",
+  "main": "legomotor-server.js",
+  "dependencies": {
+    "serialport": "^9.0.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lynda Weiss",
+  "license": "MIT"
+}

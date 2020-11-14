@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LEGO&reg; Motor Command from Web Browser</title>
+    <link rel="stylesheet" type="text/css" href="legomotor.css" />
+  </head>
 
+  <body>
+    <h1>Command the LEGO&reg; Motors!</h1>
+    <div class="container" data-motor="0">
+      <div class="row">
+        <fieldset>
+          <legend>Motor 1 Controls</legend>
+          <div class="row">
+            <label for="fwd">
+              <input
+                class="form-control"
+                type="radio"
+                name="motor1-direction"
+                value="fwd"
+                checked
+              />
+              Forward
+            </label>
+            <label for="rev">
+              <input
+                class="form-control"
+                type="radio"
+                name="motor1-direction"
+                value="rev"
+              />
+              Reverse
+            </label>
+          </div>
+          <div class="row">
+            <label for="speed">
+              <input
+                class="form-control in-speed"
+                type="range"
+                min="1"
+                max="7"
+                step="1"
+                value="4"
+              />
+              Speed
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="form-control btn btn-start" id="start">Start</button>
+        </div>
+        <div class="col">
+          <button class="form-control btn btn-stop" id="stop">Stop</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" data-motor="1">
+      <div class="row">
+        <fieldset>
+          <legend>Motor 2 Controls</legend>
+          <div class="row">
+            <label for="fwd">
+              <input
+                class="form-control"
+                type="radio"
+                name="motor2-direction"
+                value="fwd"
+                checked
+              />
+              Forward
+            </label>
+            <label for="rev">
+              <input
+                class="form-control"
+                type="radio"
+                name="motor2-direction"
+                value="rev"
+              />
+              Reverse
+            </label>
+          </div>
+          <div class="row">
+            <label for="speed">
+              <input
+                class="form-control in-speed"
+                type="range"
+                min="1"
+                max="7"
+                step="1"
+                value="1"
+              />
+              Speed
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="form-control btn btn-start" id="start">Start</button>
+        </div>
+        <div class="col">
+          <button class="form-control btn btn-stop" id="stop">Stop</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- For socket communication -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- LEGO motor client handler -->
+    <script src="legomotor-client.js"></script>
+  </body>
+</html>

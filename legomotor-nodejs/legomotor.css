@@ -1,0 +1,71 @@
+body {
+    font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-style: normal;
+}
+
+h1, h5 {
+    color: #373a3c;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 19px;
+    line-height: 23px;
+    margin: 10px 0;
+}
+
+label {
+    padding-right: 5px;
+}
+
+.container {
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.col {
+  margin: 10px 10px;
+}
+
+.form-control {
+    color: #495057;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    box-sizing: border-box;
+}
+
+.btn {
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.btn-start {
+    background-color: green;
+}
+
+.btn-stop {
+    background-color: red;
+}
+
+/* Styling for large screen sizes */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 50%;
+    }
+}
