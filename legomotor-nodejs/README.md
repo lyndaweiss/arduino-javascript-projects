@@ -11,8 +11,8 @@ Source code for an example in which commands to control a LEGO Power Functions m
 
 ### How to run
 1. Identify the name/number of the port the Arduino UNO is connected to (COM* on Windows, /dev/ttyUSB# or /dev/ttyACM* on Linux, replace * with a number)
-  - Set the port in the Ardunio IDE (Tools->Port)
-  - Set the port in legomotor-server.js (change the first argument in the line `const arduinoPort = new serialPort("COM3", { baudRate: 115200 });`
+  a. Set the port in the Ardunio IDE (Tools->Port)
+  b. Set the port in legomotor-server.js (change the first argument in the line `const arduinoPort = new serialPort("COM3", { baudRate: 115200 });`
 2. Verify/Upload motor-uno.ino
 3. Start a command prompt (Windows) or shell (Linux)
   - Go to project directory (arduino-javascript-projects/legomotor-nodejs)
