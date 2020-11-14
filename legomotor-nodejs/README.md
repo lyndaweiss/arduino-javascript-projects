@@ -17,6 +17,7 @@ Source code for an example in which commands to control a LEGO&reg; Power Functi
 6. Start Arduino IDE and [add LEGO Power Functions IR library](https://www.arduino.cc/en/Guide/Libraries)
 
 ### Circuit
+![Image of Circuit](legomotor-circuit.png)
 
 ### How to Run
 1. Identify the name/number of the port the Arduino UNO is connected to (COM* on Windows, /dev/ttyUSB# or /dev/ttyACM* on Linux, replace * with a number)
