@@ -4,3 +4,5 @@ This is a collection of projects that involve communicating with an Arduino UNO 
 ### [Blink](../master/blink-nodejs)
 Blink an LED - set the number of blinks and the blink rate from the browser.
 
+### [LEGO&reg;](../master/legomotor-nodejs)
+Command LEGO&reg; Power Functions motors - start/stop and set speed and direction from the browser
