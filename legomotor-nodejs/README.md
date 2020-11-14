@@ -1,6 +1,13 @@
 # LEGO&reg; Motor
 Source code for an example in which commands to control a LEGO&reg; Power Functions motor are sent to an Arduino UNO from a web browser.
 
+### Required Parts
+- Arduino UNO
+- USB A-B Cable
+- IR Emitter
+- 220 Ω Resistor
+- LEGO&reg; Power Functions motor(s), IR Receiver, and Battery Pack
+
 ### Installation
 1. Clone [arduino-javascript-projects](../master) repository
 2. Change directory to arduino-javascript-projects/legomotor-nodejs folder
@@ -9,7 +16,9 @@ Source code for an example in which commands to control a LEGO&reg; Power Functi
 5. Install [Arduino IDE](https://www.arduino.cc/en/software) (if not already installed)
 6. Start Arduino IDE and [add LEGO Power Functions IR library](https://www.arduino.cc/en/Guide/Libraries)
 
-### How to run
+### Circuit
+
+### How to Run
 1. Identify the name/number of the port the Arduino UNO is connected to (COM* on Windows, /dev/ttyUSB# or /dev/ttyACM* on Linux, replace * with a number)
    1. Set the port in the Ardunio IDE (Tools->Port)
    2. change the first argument in the line `const arduinoPort = new serialPort("COM3", { baudRate: 115200 });` in legomotor-server.js
