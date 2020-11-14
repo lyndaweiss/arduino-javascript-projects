@@ -23,7 +23,7 @@ Source code for an example in which commands to control a LEGO&reg; Power Functi
 Connect the battery pack to the IR receiver cable, and connect the motor(s) to the receiver. Set the receiver to channel 2.
 
 ### How to Run
-1. Identify the name/number of the port the Arduino UNO is connected to (COM* on Windows, /dev/ttyUSB# or /dev/ttyACM* on Linux, replace * with a number)
+1. Identify the name/number of the port the Arduino UNO is connected to (COM* on Windows, /dev/ttyUSB* or /dev/ttyACM* on Linux, replace * with a number)
    1. Set the port in the Ardunio IDE (Tools->Port)
    2. change the first argument in the line `const arduinoPort = new serialPort("COM3", { baudRate: 115200 });` in legomotor-server.js
 2. Verify/Upload motor-uno.ino
