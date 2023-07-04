@@ -4,7 +4,6 @@ const fs = require('fs')
 const path = require('path');
 // Modules for interfacing with the USB port and socket 
 // communication with the client
-// TODO:
 const { SerialPort } = require('serialport');
 const { Server } = require('socket.io');
 
@@ -43,14 +42,12 @@ function handler(request, response) {
 const server = http.createServer(handler);
 
 // Create and open serial port connection to Arduino
-// TODO:
 const arduinoPort = new SerialPort({path: 'COM4', baudRate: 115200});
 arduinoPort.on('open', () => console.log(`Serial port to Arduino opened.`));
 arduinoPort.on('error', err => console.log(`Error: ${err.message}`));
 arduinoPort.on('data', data => console.log(data.toString()));
 
 // Create socket and attach to HTTP server
-// TODO:
 const socketServer = new Server(server);
 // Listen and handle client socket connections
 socketServer.on('connect', socket => {
