@@ -1,3 +1,6 @@
 # Images #
 ###################
 *.png
+# Packages
+package-lock.json
+node_modules
