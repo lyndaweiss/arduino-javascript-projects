@@ -3,14 +3,13 @@
   "version": "0.0.1",
   "description": "Sends data from a browser to an Arduino UNO, via a Node.js server.",
   "main": "server.js",
-  "dependencies": {
-    "serialport": "^9.0.0",
-    "socket.io": "^2.3.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lynda Weiss <lynda.weiss@lyndaweiss.net> (https://lyndaweiss.net)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "serialport": "^11.0.0",
+    "socket.io": "^4.7.1"
+  }
 }
