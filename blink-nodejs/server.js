@@ -6,6 +6,8 @@ const path = require('path');
 // communication with the client
 const { SerialPort } = require('serialport');
 const { Server } = require('socket.io');
+// Path to serial port to communicate with arduino
+const arduinoPortPath = process.argv.length === 3 ? process.argv[2] : 'COM1';
 
 // Web server handler callback
 function handler(request, response) {
@@ -14,8 +16,6 @@ function handler(request, response) {
   if (request.url === '/') {
     fileName += 'index.html';
   }
-
-  console.log(`Request from ${response.socket.remoteAddress}`);
 
   // Content types for writing HTTP header
   const contentTypes = {
@@ -27,7 +27,6 @@ function handler(request, response) {
 
   // Read and serve requested file 
   fs.readFile(`${__dirname}${fileName}`, (err, data) => {
-    // console.log(`Requested: ${__dirname}${fileName}`);
     if (err) {
       response.writeHead(500);
       return response.end(`Error loading ${path.basename(fileName)}`);
@@ -42,7 +41,7 @@ function handler(request, response) {
 const server = http.createServer(handler);
 
 // Create and open serial port connection to Arduino
-const arduinoPort = new SerialPort({path: 'COM4', baudRate: 115200});
+const arduinoPort = new SerialPort({path: arduinoPortPath, baudRate: 115200});
 arduinoPort.on('open', () => console.log(`Serial port to Arduino opened.`));
 arduinoPort.on('error', err => console.log(`Error: ${err.message}`));
 arduinoPort.on('data', data => console.log(data.toString()));
